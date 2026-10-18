@@ -1,0 +1,101 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+    .header h1 {
+        margin-top: 0;
+    }
+
+    .header a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #1f3c88;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btn-submit:hover {
+        background-color: #14285c;
+    }
+
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .feedback-table th,
+    .feedback-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .feedback-table th {
+        background-color: #1f3c88;
+        color: white;
+    }
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.error,
+.validation-summary {
+    color: red;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

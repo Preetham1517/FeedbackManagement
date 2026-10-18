@@ -1,0 +1,45 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewBag.Title - Feedback Management</title>
+
+    <link href="~/Content/Site.css"
+          rel="stylesheet" />
+
+    @Styles.Render("~/Content/css")
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Feedback Management System</h1>
+
+        <nav>
+            @Html.ActionLink("Home", "Index", "Feedback")
+            |
+            @Html.ActionLink("Submit Feedback",
+                             "Create", "Feedback")
+        </nav>
+    </header>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <p>&copy; @DateTime.Now.Year Feedback Management System</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

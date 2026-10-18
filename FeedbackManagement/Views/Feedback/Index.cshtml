@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FeedbackManagement.Models.Feedback>
+
+@{
+    ViewBag.Title = "Feedback List";
+}
+
+<h2>Feedback List</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="success-message">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<p>
+    @Html.ActionLink(
+        "Submit New Feedback",
+        "Create",
+        "Feedback",
+        null,
+        new { @class = "btn-submit" })
+</p>
+
+@if (!Model.Any())
+{
+    <p>No feedback has been submitted yet.</p>
+}
+else
+{
+    @Html.Partial("_FeedbackList", Model)
+}

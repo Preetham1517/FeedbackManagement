@@ -1,0 +1,28 @@
+﻿@model IEnumerable<FeedbackManagement.Models.Feedback>
+
+<table class="feedback-table">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Rating</th>
+            <th>Comments</th>
+            <th>Submitted On</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Subject</td>
+                <td>@item.Rating / 5</td>
+                <td>@item.Comments</td>
+                <td>@item.SubmittedOn.ToString("dd-MM-yyyy HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
